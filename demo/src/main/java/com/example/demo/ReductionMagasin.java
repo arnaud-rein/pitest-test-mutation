@@ -8,18 +8,10 @@ public class ReductionMagasin {
             return true;
         }
         else if(montantArticle > 80 ) {
-            if(carteMembre == true) {
+            if(carteMembre == true ) {
                 return true;
-            }else{
-                return false;
             }
-
-        } else if(montantArticle < 80  && carteMembre == true) {
-            return true;
         }
-
-
-
         return false;
     }
 

@@ -20,8 +20,10 @@ public class ReductionMagasinTest {
     @Test
     void montantArticle81_succes(){
         ReductionMagasin reductionMagasin = new ReductionMagasin();
-        Assertions.assertEquals(false, reductionMagasin.estElligibleReduction(81, false));
+        Assertions.assertEquals(true, reductionMagasin.estElligibleReduction(81, true));
+        Assertions.assertEquals(false, reductionMagasin.estElligibleReduction(80, true));
     }
+
 
 }
 
